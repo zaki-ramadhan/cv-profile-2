@@ -11,10 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 font-[Inter]">
+    <!-- Mobile Header -->
+    <header class="lg:hidden sticky top-0 z-40 w-full bg-slate-900/75 px-6 py-4 backdrop-blur flex justify-between items-center border-b border-slate-800">
+        <a href="/" class="text-xl font-bold tracking-tight text-slate-200">Brittany Chiang</a>
+        <button id="mobile-menu-toggle" class="p-2 text-slate-400 hover:text-slate-200 focus:outline-none" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden lg:hidden transition-opacity duration-300 opacity-0"></div>
+
     <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div class="lg:flex lg:justify-between lg:gap-10">
-            <!-- Header / Left Column -->
-            <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[42%] lg:flex-col lg:justify-between lg:py-24">
+            <!-- Header / Left Column (Adaptive Sidebar) -->
+            <header id="main-header" class="fixed inset-y-0 left-0 z-[60] w-72 -translate-x-full transition-transform duration-300 bg-slate-900 px-8 py-12 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[42%] lg:flex-col lg:justify-between lg:py-24 lg:translate-x-0 lg:bg-transparent lg:px-0 lg:z-auto shadow-2xl lg:shadow-none">
+                <!-- Close Button (Mobile Only) -->
+                <button id="mobile-menu-close" class="lg:hidden absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-200" aria-label="Close menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
                 <div>
                     <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
                         <a href="/">Brittany Chiang</a>
@@ -26,9 +45,9 @@
                         I build accessible, pixel-perfect digital experiences for the web.
                     </p>
 
-                    <!-- Navigation (Desktop) -->
-                    <nav class="nav hidden lg:block" aria-label="In-page jump links">
-                        <ul class="mt-16 w-max">
+                    <!-- Navigation (Desktop & Mobile Sidebar) -->
+                    <nav class="nav mt-16" aria-label="In-page jump links">
+                        <ul class="w-max">
                             <li>
                                 <a class="group flex items-center py-3" href="#summary">
                                     <span
@@ -206,32 +225,49 @@
                 <section id="introduction" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
                     aria-label="Introduction">
                     <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Introduction</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Introduction
+                        </h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
                     <div>
+                        <!-- Main Featured Preview -->
+                        <div id="intro-featured" class="mb-8 group cursor-pointer relative aspect-video w-full overflow-hidden rounded-xl border border-slate-700 shadow-2xl bg-slate-800">
+                            <img id="intro-main-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Featured Video" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-slate-900/20 group-hover:bg-slate-900/40 transition-colors">
+                                <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-teal-400/90 text-slate-900 shadow-xl scale-100 group-hover:scale-110 transition-transform">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 md:w-10 md:h-10 ml-1">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-slate-900/90 to-transparent">
+                                <h3 id="intro-main-title" class="text-lg md:text-xl font-bold text-slate-100">Project Demo 1</h3>
+                            </div>
+                        </div>
+
+                        <!-- Horizontal Thumbnails -->
                         <div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
-                            <div class="flex-none w-64">
-                                <div
-                                    class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border border-slate-700">
-                                    <div class="absolute inset-0 flex items-center justify-center text-slate-500">
-                                        <span class="text-xs">Project Demo 1</span>
+                            <div class="intro-thumb flex-none w-48 md:w-64 cursor-pointer group active" data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" data-title="Project Demo 1">
+                                <div class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border-2 border-teal-400 shadow-lg transition-all group-hover:border-teal-400">
+                                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=400" alt="Demo 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                    <div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
+                                        <span class="text-xs font-bold text-white px-2 text-center">Project Demo 1</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex-none w-64">
-                                <div
-                                    class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border border-slate-700">
-                                    <div class="absolute inset-0 flex items-center justify-center text-slate-500">
-                                        <span class="text-xs">Project Demo 2</span>
+                            <div class="intro-thumb flex-none w-48 md:w-64 cursor-pointer group" data-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800" data-title="Project Demo 2">
+                                <div class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border-2 border-slate-700 transition-all group-hover:border-teal-400/50">
+                                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=400" alt="Demo 2" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <span class="text-xs font-bold text-white px-2 text-center">Project Demo 2</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex-none w-64">
-                                <div
-                                    class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border border-slate-700">
-                                    <div class="absolute inset-0 flex items-center justify-center text-slate-500">
-                                        <span class="text-xs">Profile Intro</span>
+                            <div class="intro-thumb flex-none w-48 md:w-64 cursor-pointer group" data-src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=800" data-title="Profile Intro">
+                                <div class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border-2 border-slate-700 transition-all group-hover:border-teal-400/50">
+                                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=400" alt="Profile" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <span class="text-xs font-bold text-white px-2 text-center">Profile Intro</span>
                                     </div>
                                 </div>
                             </div>

@@ -134,4 +134,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // --- Scroll to Top Button Logic ---
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollToTopBtn.classList.remove('translate-y-24', 'opacity-0');
+            } else {
+                scrollToTopBtn.classList.add('translate-y-24', 'opacity-0');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });

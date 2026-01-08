@@ -902,9 +902,16 @@
       transition-property: none;
     }
   }
-  .max-md\:text-\[1\.1rem\] {
+  .max-md\:text-base {
     @media (width < 48rem) {
-      font-size: 1.1rem;
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .max-md\:text-sm {
+    @media (width < 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .sm\:order-1 {
@@ -1176,14 +1183,6 @@
           opacity: 100% !important;
         }
       }
-    }
-  }
-}
-@layer base {
-  @media (max-width: 768px) {
-    :root {
-      --text-sm: 0.95rem;
-      --text-xs: 0.85rem;
     }
   }
 }

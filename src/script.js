@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleMenu = (show) => {
         if (show) {
             mobileMenuOverlay.classList.remove('hidden');
-            // Small delay to trigger transition
             setTimeout(() => {
                 mobileMenuOverlay.classList.add('opacity-100');
                 mainHeader.classList.remove('-translate-x-full');
@@ -37,12 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
         thumb.addEventListener('click', () => {
             const newSrc = thumb.getAttribute('data-src');
             const newTitle = thumb.getAttribute('data-title');
-
-            // Update main preview
             if (mainIntroImg) mainIntroImg.src = newSrc;
             if (mainIntroTitle) mainIntroTitle.innerText = newTitle;
 
-            // Update thumbnail styles
             introThumbs.forEach(t => {
                 const innerDiv = t.querySelector('div');
                 const img = t.querySelector('img');
@@ -56,79 +52,86 @@ document.addEventListener('DOMContentLoaded', () => {
             activeDiv.classList.remove('border-slate-700');
             activeDiv.classList.add('border-teal-400', 'shadow-lg');
             if (activeImg) activeImg.classList.remove('opacity-60');
-
-            // Scroll the thumbnail to the center of the container
-            thumb.scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest',
-                inline: 'center'
-            });
+            thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         });
     });
 
-    // --- Navigation & Scrollspy Logic ---
+    // --- Navigation (URL Hash Based) ---
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
 
-    // Close menu when clicking a link (mobile)
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth < 1024) {
-                toggleMenu(false);
+    const syncNavWithHash = () => {
+        const currentHash = window.location.hash || '#summary';
+        navLinks.forEach(link => {
+            const indicator = link.querySelector('.nav-indicator');
+            const text = link.querySelector('.nav-text');
+            const isActive = link.getAttribute('href') === currentHash;
+
+            if (isActive) {
+                link.classList.add('active');
+                if (indicator) {
+                    indicator.classList.remove('w-8', 'bg-slate-600');
+                    indicator.classList.add('w-16', 'bg-slate-200');
+                }
+                if (text) {
+                    text.classList.remove('text-slate-500');
+                    text.classList.add('text-slate-200');
+                }
+            } else {
+                link.classList.remove('active');
+                if (indicator) {
+                    indicator.classList.remove('w-16', 'bg-slate-200');
+                    indicator.classList.add('w-8', 'bg-slate-600');
+                }
+                if (text) {
+                    text.classList.remove('text-slate-200');
+                    text.classList.add('text-slate-500');
+                }
             }
         });
-    });
+    };
 
+    // Observer to update URL hash silently while scrolling
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.2 // Trigger when 20% of the section is visible
+        rootMargin: '-25% 0px -70% 0px', // Detects section in the top-middle area
+        threshold: 0
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Remove active class from all links
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    const indicator = link.querySelector('.nav-indicator');
-                    const text = link.querySelector('.nav-text');
-
-                    // Reset styles
-                    if (indicator) {
-                        indicator.classList.remove('w-16', 'bg-slate-200');
-                        indicator.classList.add('w-8', 'bg-slate-600');
-                    }
-                    if (text) {
-                        text.classList.remove('text-slate-200');
-                        text.classList.add('text-slate-500');
-                    }
-                });
-
-                // Add active class to the current section's link
-                const id = entry.target.getAttribute('id');
-                const activeLink = document.querySelector(`nav a[href="#${id}"]`);
-
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                    const indicator = activeLink.querySelector('.nav-indicator');
-                    const text = activeLink.querySelector('.nav-text');
-
-                    // Apply active styling
-                    if (indicator) {
-                        indicator.classList.remove('w-8', 'bg-slate-600');
-                        indicator.classList.add('w-16', 'bg-slate-200');
-                    }
-                    if (text) {
-                        text.classList.remove('text-slate-500');
-                        text.classList.add('text-slate-200');
-                    }
-                }
+                const id = entry.target.id;
+                // Update URL without jumping/adding to history
+                history.replaceState(null, null, `#${id}`);
+                syncNavWithHash();
             }
         });
     }, observerOptions);
 
-    sections.forEach(section => {
-        observer.observe(section);
+    sections.forEach(section => observer.observe(section));
+
+    // Listen for hash changes (clicks or manual URL change)
+    window.addEventListener('hashchange', syncNavWithHash);
+
+    // Initial sync
+    syncNavWithHash();
+
+    // Close mobile menu on click
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 1024) toggleMenu(false);
+        });
+    });
+
+    // Special bottom-of-page detection
+    window.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 20) {
+            const lastId = sections[sections.length - 1].id;
+            if (window.location.hash !== `#${lastId}`) {
+                history.replaceState(null, null, `#${lastId}`);
+                syncNavWithHash();
+            }
+        }
     });
 });

@@ -9,28 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 font-[Inter]">
+</head>
+
+<body
+    class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 font-[Inter] max-md:text-[1.05rem]">
     <!-- Mobile Header -->
-    <header class="lg:hidden sticky top-0 z-40 w-full bg-slate-900/75 px-6 py-4 backdrop-blur flex justify-between items-center border-b border-slate-800">
+    <header
+        class="lg:hidden sticky top-0 z-40 w-full bg-slate-900/75 px-6 py-4 backdrop-blur flex justify-between items-center border-b border-slate-800">
         <a href="/" class="text-xl font-bold tracking-tight text-slate-200">Brittany Chiang</a>
-        <button id="mobile-menu-toggle" class="p-2 text-slate-400 hover:text-slate-200 focus:outline-none" aria-label="Toggle menu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+        <button id="mobile-menu-toggle" class="p-2 text-slate-400 hover:text-slate-200 focus:outline-none"
+            aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </button>
     </header>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden lg:hidden transition-opacity duration-300 opacity-0"></div>
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden lg:hidden transition-opacity duration-300 opacity-0">
+    </div>
 
     <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div class="lg:flex lg:justify-start lg:gap-10">
             <!-- Header / Left Column (Adaptive Sidebar) -->
-            <header id="main-header" class="fixed inset-y-0 left-0 z-[60] w-72 -translate-x-full transition-transform duration-300 bg-slate-900 px-8 py-12 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[35%] lg:flex-col lg:justify-between lg:py-16 lg:translate-x-0 lg:bg-transparent lg:px-0 lg:z-auto shadow-2xl lg:shadow-none lg:overflow-y-auto no-scrollbar">
+            <header id="main-header"
+                class="fixed inset-y-0 left-0 z-[60] w-72 -translate-x-full transition-transform duration-300 bg-slate-900 px-8 py-12 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[35%] lg:flex-col lg:justify-between lg:py-16 lg:translate-x-0 lg:bg-transparent lg:px-0 lg:z-auto shadow-2xl lg:shadow-none lg:overflow-y-auto no-scrollbar">
                 <!-- Close Button (Mobile Only) -->
-                <button id="mobile-menu-close" class="lg:hidden absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-200" aria-label="Close menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <button id="mobile-menu-close"
+                    class="lg:hidden absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-200"
+                    aria-label="Close menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -207,11 +218,11 @@
 
             <!-- Main Content / Right Column -->
             <main id="content" class="lg:w-[65%] lg:py-24">
-                <section id="summary" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Summary">
+                <section id="summary" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24" aria-label="Summary">
                     <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Summary</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Summary</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
                     <div>
                         <p class="mb-4">Highly motivated Senior Fullstack Engineer with over 8 years of experience in
                             building scalable web applications and microservices. Expert in the Laravel and Vue.js
@@ -220,17 +231,80 @@
                     </div>
                 </section>
 
+                <section id="introduction" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="Introduction">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Introduction
+                        </h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
 
+                    <div class="space-y-4">
+                        <!-- Main Preview -->
+                        <div
+                            class="relative group overflow-hidden rounded-xl border-2 border-slate-700 shadow-2xl bg-slate-800">
+                            <img id="intro-main-img"
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                                alt="Main Intro"
+                                class="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-900/90 to-transparent">
+                                <p id="intro-main-title" class="text-slate-200 font-semibold text-lg">My Development
+                                    Workspace</p>
+                            </div>
+                        </div>
 
-                <section id="experience" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
+                        <!-- Thumbnails -->
+                        <div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar snap-x">
+                            <button class="intro-thumb flex-shrink-0 snap-start outline-none"
+                                data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                                data-title="My Development Workspace">
+                                <div
+                                    class="w-32 aspect-video rounded-lg border-2 border-teal-400 shadow-lg overflow-hidden transition-all duration-300">
+                                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=300&auto=format&fit=crop"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                            </button>
+                            <button class="intro-thumb flex-shrink-0 snap-start outline-none"
+                                data-src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+                                data-title="Clean Code Philosophy">
+                                <div
+                                    class="w-32 aspect-video rounded-lg border-2 border-slate-700 overflow-hidden transition-all duration-300">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=300&auto=format&fit=crop"
+                                        class="w-full h-full object-cover opacity-60" />
+                                </div>
+                            </button>
+                            <button class="intro-thumb flex-shrink-0 snap-start outline-none"
+                                data-src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+                                data-title="Building Scalable Apps">
+                                <div
+                                    class="w-32 aspect-video rounded-lg border-2 border-slate-700 overflow-hidden transition-all duration-300">
+                                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=300&auto=format&fit=crop"
+                                        class="w-full h-full object-cover opacity-60" />
+                                </div>
+                            </button>
+                            <button class="intro-thumb flex-shrink-0 snap-start outline-none"
+                                data-src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop"
+                                data-title="The Future of Web Tech">
+                                <div
+                                    class="w-32 aspect-video rounded-lg border-2 border-slate-700 overflow-hidden transition-all duration-300">
+                                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=300&auto=format&fit=crop"
+                                        class="w-full h-full object-cover opacity-60" />
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
                     aria-label="Work experience">
                     <!-- Experience content placeholder -->
                     <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Experience</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Experience</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
                     <ol class="group/list">
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -244,9 +318,10 @@
                                         <div class="text-base font-semibold">
                                             Lead Engineer <span class="text-slate-200">· Upstatement</span>
                                         </div>
-                                        <div class="text-slate-500 text-sm font-medium mt-2">Full-time · Boston, MA</div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Full-time · Boston, MA
+                                        </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Build, style, and ship high-quality websites, design systems, mobile apps, and
                                         digital experiences for a diverse array of projects for clients including
                                         Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala
@@ -257,7 +332,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -271,9 +346,10 @@
                                         <div class="text-base font-semibold">
                                             UI Engineer Co-op <span class="text-slate-200">· Apple</span>
                                         </div>
-                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Cupertino, CA</div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Cupertino, CA
+                                        </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Developed and styled interactive web apps for Apple Music, including the user
                                         interface of Apple Music's embeddable web player widget for in-browser user
                                         authorization and full song playback.
@@ -281,7 +357,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -295,9 +371,10 @@
                                         <div class="text-base font-semibold">
                                             Developer <span class="text-slate-200">· Scout Studio</span>
                                         </div>
-                                        <div class="text-slate-500 text-sm font-medium mt-2">Part-time · Boston, MA</div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Part-time · Boston, MA
+                                        </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Collaborated with other student designers and engineers on pro-bono projects to
                                         create new brands, design systems, and websites for organizations in the
                                         community.
@@ -305,7 +382,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -319,16 +396,17 @@
                                         <div class="text-base font-semibold">
                                             Software Engineer Co-op <span class="text-slate-200">· Starry</span>
                                         </div>
-                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Boston, MA</div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Boston, MA
+                                        </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Worked with the UI team to engineer and improve major features of Starry's
                                         customer-facing Android app.
                                     </p>
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -340,11 +418,13 @@
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
                                         <div class="text-base font-semibold">
-                                            Creative Technologist Co-op <span class="text-slate-200">· MullenLowe U.S.</span>
+                                            Creative Technologist Co-op <span class="text-slate-200">· MullenLowe
+                                                U.S.</span>
                                         </div>
-                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Boston, MA</div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Boston, MA
+                                        </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Developed, maintained, and shipped production code for client websites. Clients
                                         included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more.
                                     </p>
@@ -369,14 +449,14 @@
                     </div>
                 </section>
 
-                <section id="education" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
+                <section id="education" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
                     aria-label="Education">
                     <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Education</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Education</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
                     <ol class="group/list">
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -388,17 +468,20 @@
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
                                         <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
-                                                <span>Institut Teknologi Bandung (ITB) <span class="inline-block"> · Master of Computer Science</span></span>
+                                            <div
+                                                class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                                <span>Institut Teknologi Bandung (ITB) <span class="inline-block"> ·
+                                                        Master of Computer Science</span></span>
                                             </div>
                                             <div class="text-teal-300 text-sm font-medium mt-1">Bandung, Indonesia</div>
                                         </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">Thesis: 'Optimizing High-Concurrency Database Transactions in Distributed Systems'. Graduated Cum Laude.</p>
+                                    <p class="mt-4 text-sm leading-normal">Thesis: 'Optimizing High-Concurrency Database
+                                        Transactions in Distributed Systems'. Graduated Cum Laude.</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -410,24 +493,26 @@
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
                                         <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
-                                                <span>Widyatama University <span class="inline-block"> · Bachelor's Degree in Informatics</span></span>
+                                            <div
+                                                class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                                <span>Widyatama University <span class="inline-block"> · Bachelor's
+                                                        Degree in Informatics</span></span>
                                             </div>
                                             <div class="text-teal-300 text-sm font-medium mt-1">Bandung, Indonesia</div>
                                         </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal"></p>
+                                    <p class="mt-4 text-sm leading-normal"></p>
                                 </div>
                             </div>
                         </li>
                     </ol>
                 </section>
 
-                <section id="skills" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Skills">
+                <section id="skills" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24" aria-label="Skills">
                     <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Skills</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Skills</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
                     <ul class="flex flex-wrap gap-2">
                         <li
                             class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
@@ -444,14 +529,14 @@
                     </ul>
                 </section>
 
-                <section id="projects" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
+                <section id="projects" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
                     aria-label="Selected projects">
                     <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Projects</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Projects</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
                     <ul class="group/list">
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -459,12 +544,14 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                        <div
+                                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
                                             <span>Build a Spotify Connected App</span>
                                         </div>
-                                        <div class="text-teal-300 text-xs font-semibold mt-1">Lead Instructor & Developer</div>
+                                        <div class="text-teal-300 text-xs font-semibold mt-1">Lead Instructor &
+                                            Developer</div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Video course that teaches how to build a web app with the Spotify Web API.
                                         Topics covered include the principles of REST APIs, user auth flows, Node,
                                         Express, React, Styled Components, and more.
@@ -501,12 +588,14 @@
                                     <div
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1">
                                         <!-- Placeholder Image -->
-                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop" alt="Project" class="h-24 w-full object-cover rounded border border-slate-700 shadow-sm" />
+                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop"
+                                            alt="Project"
+                                            class="aspect-video w-full object-cover rounded border border-slate-700 shadow-sm" />
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -514,12 +603,13 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                        <div
+                                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
                                             <span>Spotify Profile</span>
                                         </div>
                                         <div class="text-teal-300 text-xs font-semibold mt-1">Fullstack Developer</div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Web app for visualizing personalized Spotify data. View your top artists, top
                                         tracks, recently played tracks, and detailed audio information about each track.
                                         Create and save new playlists of recommended tracks based on your existing
@@ -552,12 +642,14 @@
                                     <div
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1">
                                         <!-- Placeholder Image -->
-                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop" alt="Project" class="h-24 w-full object-cover rounded border border-slate-700 shadow-sm" />
+                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop"
+                                            alt="Project"
+                                            class="aspect-video w-full object-cover rounded border border-slate-700 shadow-sm" />
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -565,12 +657,14 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                        <div
+                                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
                                             <span>Halcyon Theme</span>
                                         </div>
-                                        <div class="text-teal-300 text-xs font-semibold mt-1">UI/UX Designer & Theme Developer</div>
+                                        <div class="text-teal-300 text-xs font-semibold mt-1">UI/UX Designer & Theme
+                                            Developer</div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.
                                     </p>
                                 </div>
@@ -578,12 +672,14 @@
                                     <div
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1">
                                         <!-- Placeholder Image -->
-                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop" alt="Project" class="h-24 w-full object-cover rounded border border-slate-700 shadow-sm" />
+                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop"
+                                            alt="Project"
+                                            class="aspect-video w-full object-cover rounded border border-slate-700 shadow-sm" />
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="mb-12">
+                        <li class="mb-8">
                             <div
                                 class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <div
@@ -591,12 +687,13 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                        <div
+                                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
                                             <span>brittanychiang.com (v4)</span>
                                         </div>
                                         <div class="text-teal-300 text-xs font-semibold mt-1">Frontend Developer</div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">
+                                    <p class="mt-4 text-sm leading-normal">
                                         An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks
                                     </p>
                                     <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
@@ -621,7 +718,9 @@
                                     <div
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1">
                                         <!-- Placeholder Image -->
-                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop" alt="Project" class="h-24 w-full object-cover rounded border border-slate-700 shadow-sm" />
+                                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop"
+                                            alt="Project"
+                                            class="aspect-video w-full object-cover rounded border border-slate-700 shadow-sm" />
                                     </div>
                                 </div>
                             </div>
@@ -629,330 +728,351 @@
                     </ul>
                 </section>
 
-                        <section id="courses" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Courses">
+                <section id="courses" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24" aria-label="Courses">
 
-                            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Courses</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <ol class="group/list">
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="Feb 2023 — Mar 2023">Feb 2023 — Mar 2023</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <div class="text-base font-semibold text-slate-200">Clean Code Architecture</div>
-                                    <div class="text-teal-300 text-sm font-medium mt-1">Uncle Bob</div>
-                                </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal"></p>
-
-                        </div>
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Courses</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
                     </div>
-                </li>
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="Jan 2022 — Feb 2022">Jan 2022 — Feb 2022</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <div class="text-base font-semibold text-slate-200">Advanced Vue Design Patterns</div>
-                                    <div class="text-teal-300 text-sm font-medium mt-1">Vue Mastery</div>
+                    <ol class="group/list">
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal"></p>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="Feb 2023 — Mar 2023">Feb 2023 — Mar 2023</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <div class="text-base font-semibold text-slate-200">Clean Code Architecture
+                                            </div>
+                                            <div class="text-teal-300 text-sm font-medium mt-1">Uncle Bob</div>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal"></p>
 
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </section>
-
-        <section id="certifications" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
-            aria-label="Certifications">
-            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Certifications</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <ol class="group/list">
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="2024">2024</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <div class="text-base font-semibold text-slate-200">AWS Certified Solutions Architect</div>
-                                    <div class="text-teal-300 text-sm font-medium mt-1">Amazon Web Services</div>
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal"></p>
-
-                        </div>
-                    </div>
-                </li>
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="2022">2022</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <div class="text-base font-semibold text-slate-200">Laravel Certified Developer</div>
-                                    <div class="text-teal-300 text-sm font-medium mt-1">Laravel</div>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal"></p>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="Jan 2022 — Feb 2022">Jan 2022 — Feb 2022</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <div class="text-base font-semibold text-slate-200">Advanced Vue Design
+                                                Patterns</div>
+                                            <div class="text-teal-300 text-sm font-medium mt-1">Vue Mastery</div>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal"></p>
 
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </section>
-
-        <section id="languages" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Languages">
-            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Languages</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <li
-                    class="group relative flex items-center gap-4 rounded-md transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div class="text-slate-200 font-medium">Bahasa Indonesia</div>
-                    <div class="text-slate-500 text-sm">Native</div>
-                </li>
-                <li
-                    class="group relative flex items-center gap-4 rounded-md transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div class="text-slate-200 font-medium">English</div>
-                    <div class="text-slate-500 text-sm">Fluent</div>
-                </li>
-                <li
-                    class="group relative flex items-center gap-4 rounded-md transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div class="text-slate-200 font-medium">Sundanese</div>
-                    <div class="text-slate-500 text-sm">Native</div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="references" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="References">
-            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">References</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <ul class="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <li class="group relative rounded-xl transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50 p-6 border border-slate-800 bg-slate-800/30 hover:bg-slate-800/50 shadow-sm">
-                    <h3 class="font-medium leading-snug text-slate-200 mb-2">Budi Santoso</h3>
-                    <div class="text-slate-500 text-sm mb-2">Unicorn Tech</div>
-                    <div class="text-slate-500 text-sm mb-2">budi.s@unicorn.tech</div>
-                    <div class="text-slate-500 text-sm mb-2">+62 811 9999 888</div>
-                </li>
-                <li class="group relative rounded-xl transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50 p-6 border border-slate-800 bg-slate-800/30 hover:bg-slate-800/50 shadow-sm">
-                    <h3 class="font-medium leading-snug text-slate-200 mb-2">Sarah Wijaya</h3>
-                    <div class="text-slate-500 text-sm mb-2">PT Sumroch Karya</div>
-                    <div class="text-slate-500 text-sm mb-2">sarah.w@sumroch.com</div>
-                    <div class="text-slate-500 text-sm mb-2">+62 812 5555 444</div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="organizations" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
-            aria-label="Organizations">
-            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Organizations</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <ol class="group/list">
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="2021 — Present">2021 — Present</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Community Lead">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Community Lead <span class="inline-block"> · Laravel Bandung
-                                                Community</span></span>
-                                    </a>
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal">Organizing monthly meetups, workshops, and managing a
-                                community of 500+ developers.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
 
-                        </div>
+                <section id="certifications" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="Certifications">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Certifications
+                        </h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
                     </div>
-                </li>
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="2021 — 2022">2021 — 2022</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Core Member">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Core Member <span class="inline-block"> · Google Developer Student Clubs -
-                                                ITB</span></span>
-                                    </a>
+                    <ol class="group/list">
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal">Spearheaded the mobile development wing and organized
-                                multiple Cloud Computing workshops for students.</p>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="2024">2024</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <div class="text-base font-semibold text-slate-200">AWS Certified Solutions
+                                                Architect</div>
+                                            <div class="text-teal-300 text-sm font-medium mt-1">Amazon Web Services
+                                            </div>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal"></p>
 
-                        </div>
-                    </div>
-                </li>
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="2019 — 2021">2019 — 2021</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Volunteer Contributor">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Volunteer Contributor <span class="inline-block"> · Open Source
-                                                Indonesia</span></span>
-                                    </a>
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal">Contributed to local government digital
-                                transformation projects and translated technical documentation for popular libraries.
-                            </p>
-
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </section>
-
-        <section id="hobbies" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Hobbies">
-            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Hobbies</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <div>
-                <p class="mb-4">I have a deep passion for System Design and Cloud Architecture, often spending my
-                    weekends experimenting with new infrastructure tools. Outside of tech, I enjoy Hiking in the
-                    mountains of West Java to disconnect and recharge. I'm also an avid enthusiast of Mechanical
-                    Keyboards and enjoy Street Photography.</p>
-            </div>
-        </section>
-
-        <section id="additional" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Additional">
-            <div class="mb-10 flex items-center gap-4 relative">
-    <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Additional</h2>
-    <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-</div>
-            <ol class="group/list">
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="2020 — Present">2020 — Present</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Tech Book Club">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Tech Book Club <span class="inline-block"> · Member</span></span>
-                                    </a>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal">Monthly discussion on software engineering books.</p>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="2022">2022</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <div class="text-base font-semibold text-slate-200">Laravel Certified
+                                                Developer</div>
+                                            <div class="text-teal-300 text-sm font-medium mt-1">Laravel</div>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal"></p>
 
-                        </div>
-                    </div>
-                </li>
-                <li class="mb-12">
-                    <div
-                        class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <div
-                            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                        </div>
-                        <header
-                            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                            aria-label="Aug 2019 — Aug 2019">Aug 2019 — Aug 2019</header>
-                        <div class="z-10 sm:col-span-6">
-                            <h3 class="font-medium leading-snug text-slate-200">
-                                <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Hackathon Merdeka">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Hackathon Merdeka <span class="inline-block"> · Participant</span></span>
-                                    </a>
                                 </div>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal">Built a disaster relief app in 24 hours.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
 
-                        </div>
+                <section id="languages" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="Languages">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Languages</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
                     </div>
-                </li>
-            </ol>
-        </section>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <li
+                            class="group relative flex items-center gap-4 rounded-md transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                            <div class="text-slate-200 font-medium">Bahasa Indonesia</div>
+                            <div class="text-slate-500 text-sm">Native</div>
+                        </li>
+                        <li
+                            class="group relative flex items-center gap-4 rounded-md transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                            <div class="text-slate-200 font-medium">English</div>
+                            <div class="text-slate-500 text-sm">Fluent</div>
+                        </li>
+                        <li
+                            class="group relative flex items-center gap-4 rounded-md transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                            <div class="text-slate-200 font-medium">Sundanese</div>
+                            <div class="text-slate-500 text-sm">Native</div>
+                        </li>
+                    </ul>
+                </section>
 
-        <section id="writing" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Blog posts">
-        </section>
+                <section id="references" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="References">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">References</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
+                    <ul class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                        <li
+                            class="group relative rounded-xl transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50 p-6 border border-slate-800 bg-slate-800/30 hover:bg-slate-800/50 shadow-sm">
+                            <h3 class="font-medium leading-snug text-slate-200 mb-2">Budi Santoso</h3>
+                            <div class="text-slate-500 text-sm mb-2">Unicorn Tech</div>
+                            <div class="text-slate-500 text-sm mb-2">budi.s@unicorn.tech</div>
+                            <div class="text-slate-500 text-sm mb-2">+62 811 9999 888</div>
+                        </li>
+                        <li
+                            class="group relative rounded-xl transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50 p-6 border border-slate-800 bg-slate-800/30 hover:bg-slate-800/50 shadow-sm">
+                            <h3 class="font-medium leading-snug text-slate-200 mb-2">Sarah Wijaya</h3>
+                            <div class="text-slate-500 text-sm mb-2">PT Sumroch Karya</div>
+                            <div class="text-slate-500 text-sm mb-2">sarah.w@sumroch.com</div>
+                            <div class="text-slate-500 text-sm mb-2">+62 812 5555 444</div>
+                        </li>
+                    </ul>
+                </section>
 
-        <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-            <p>
-                Brittany Chiang — 2026
-            </p>
-        </footer>
-        </main>
+                <section id="organizations" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="Organizations">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Organizations
+                        </h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
+                    <ol class="group/list">
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                </div>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="2021 — Present">2021 — Present</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
+                                                href="#" aria-label="Community Lead">
+                                                <span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                <span>Community Lead <span class="inline-block"> · Laravel Bandung
+                                                        Community</span></span>
+                                            </a>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal">Organizing monthly meetups, workshops, and
+                                        managing a
+                                        community of 500+ developers.</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                </div>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="2021 — 2022">2021 — 2022</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
+                                                href="#" aria-label="Core Member">
+                                                <span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                <span>Core Member <span class="inline-block"> · Google Developer Student
+                                                        Clubs -
+                                                        ITB</span></span>
+                                            </a>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal">Spearheaded the mobile development wing and
+                                        organized
+                                        multiple Cloud Computing workshops for students.</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                </div>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="2019 — 2021">2019 — 2021</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
+                                                href="#" aria-label="Volunteer Contributor">
+                                                <span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                <span>Volunteer Contributor <span class="inline-block"> · Open Source
+                                                        Indonesia</span></span>
+                                            </a>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal">Contributed to local government digital
+                                        transformation projects and translated technical documentation for popular
+                                        libraries.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="hobbies" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24" aria-label="Hobbies">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Hobbies</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
+                    <div>
+                        <p class="mb-4">I have a deep passion for System Design and Cloud Architecture, often spending
+                            my
+                            weekends experimenting with new infrastructure tools. Outside of tech, I enjoy Hiking in the
+                            mountains of West Java to disconnect and recharge. I'm also an avid enthusiast of Mechanical
+                            Keyboards and enjoy Street Photography.</p>
+                    </div>
+                </section>
+
+                <section id="additional" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="Additional">
+                    <div class="mb-10 flex items-center gap-4 relative">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Additional</h2>
+                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
+                    </div>
+                    <ol class="group/list">
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                </div>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="2020 — Present">2020 — Present</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
+                                                href="#" aria-label="Tech Book Club">
+                                                <span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                <span>Tech Book Club <span class="inline-block"> · Member</span></span>
+                                            </a>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal">Monthly discussion on software engineering
+                                        books.</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div
+                                class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div
+                                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                </div>
+                                <header
+                                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    aria-label="Aug 2019 — Aug 2019">Aug 2019 — Aug 2019</header>
+                                <div class="z-10 sm:col-span-6">
+                                    <h3 class="font-medium leading-snug text-slate-200">
+                                        <div>
+                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
+                                                href="#" aria-label="Hackathon Merdeka">
+                                                <span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                <span>Hackathon Merdeka <span class="inline-block"> ·
+                                                        Participant</span></span>
+                                            </a>
+                                        </div>
+                                    </h3>
+                                    <p class="mt-4 text-sm leading-normal">Built a disaster relief app in 24 hours.</p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="writing" class="mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24"
+                    aria-label="Blog posts">
+                </section>
+
+                <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+                    <p>
+                        Brittany Chiang — 2026
+                    </p>
+                </footer>
+            </main>
+        </div>
     </div>
-    </div>
-        <script src="./src/script.js"></script>
-    </body>
-    </html>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>

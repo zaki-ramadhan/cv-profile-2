@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brittany Chiang | Front End Engineer</title>
+    <title>Brittany Chiang | Senior Fullstack Engineer</title>
     <link href="./dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,9 @@
     <div id="mobile-menu-overlay" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden lg:hidden transition-opacity duration-300 opacity-0"></div>
 
     <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-        <div class="lg:flex lg:justify-between lg:gap-10">
+        <div class="lg:flex lg:justify-start lg:gap-10">
             <!-- Header / Left Column (Adaptive Sidebar) -->
-            <header id="main-header" class="fixed inset-y-0 left-0 z-[60] w-72 -translate-x-full transition-transform duration-300 bg-slate-900 px-8 py-12 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[42%] lg:flex-col lg:justify-between lg:py-24 lg:translate-x-0 lg:bg-transparent lg:px-0 lg:z-auto shadow-2xl lg:shadow-none">
+            <header id="main-header" class="fixed inset-y-0 left-0 z-[60] w-72 -translate-x-full transition-transform duration-300 bg-slate-900 px-8 py-12 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[35%] lg:flex-col lg:justify-between lg:py-16 lg:translate-x-0 lg:bg-transparent lg:px-0 lg:z-auto shadow-2xl lg:shadow-none lg:overflow-y-auto no-scrollbar">
                 <!-- Close Button (Mobile Only) -->
                 <button id="mobile-menu-close" class="lg:hidden absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-200" aria-label="Close menu">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -35,18 +35,16 @@
                     </svg>
                 </button>
                 <div>
-                    <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+                    <h1 class="text-2xl font-bold tracking-tight text-slate-200 sm:text-4xl">
                         <a href="/">Brittany Chiang</a>
                     </h1>
-                    <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-                        Front End Engineer
+                    <h2 class="mt-3 text-lg font-medium tracking-tight text-teal-300 sm:text-xl">
+                        Senior Fullstack Engineer
                     </h2>
-                    <p class="mt-4 max-w-xs leading-normal">
-                        I build accessible, pixel-perfect digital experiences for the web.
-                    </p>
+
 
                     <!-- Navigation (Desktop & Mobile Sidebar) -->
-                    <nav class="nav mt-16" aria-label="In-page jump links">
+                    <nav class="nav mt-8" aria-label="In-page jump links">
                         <ul class="w-max">
                             <li>
                                 <a class="group flex items-center py-3" href="#summary">
@@ -208,7 +206,7 @@
             </header>
 
             <!-- Main Content / Right Column -->
-            <main id="content" class="pt-24 lg:w-[54%] lg:py-24">
+            <main id="content" class="lg:w-[65%] lg:py-24">
                 <section id="summary" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24" aria-label="Summary">
                     <div class="mb-10 flex items-center gap-4 relative">
     <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Summary</h2>
@@ -222,58 +220,7 @@
                     </div>
                 </section>
 
-                <section id="introduction" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
-                    aria-label="Introduction">
-                    <div class="mb-10 flex items-center gap-4 relative">
-                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-100 shrink-0">Introduction
-                        </h2>
-                        <div class="h-0.5 bg-slate-500/50 flex-grow rounded"></div>
-                    </div>
-                    <div>
-                        <!-- Main Featured Preview -->
-                        <div id="intro-featured" class="mb-8 group cursor-pointer relative aspect-video w-full overflow-hidden rounded-xl border border-slate-700 shadow-2xl bg-slate-800">
-                            <img id="intro-main-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Featured Video" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                            <div class="absolute inset-0 flex items-center justify-center bg-slate-900/20 group-hover:bg-slate-900/40 transition-colors">
-                                <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-teal-400/90 text-slate-900 shadow-xl scale-100 group-hover:scale-110 transition-transform">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 md:w-10 md:h-10 ml-1">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-slate-900/90 to-transparent">
-                                <h3 id="intro-main-title" class="text-lg md:text-xl font-bold text-slate-100">Project Demo 1</h3>
-                            </div>
-                        </div>
 
-                        <!-- Horizontal Thumbnails -->
-                        <div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
-                            <div class="intro-thumb flex-none w-48 md:w-64 cursor-pointer group active" data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" data-title="Project Demo 1">
-                                <div class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border-2 border-teal-400 shadow-lg transition-all group-hover:border-teal-400">
-                                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=400" alt="Demo 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                                    <div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
-                                        <span class="text-xs font-bold text-white px-2 text-center">Project Demo 1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intro-thumb flex-none w-48 md:w-64 cursor-pointer group" data-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800" data-title="Project Demo 2">
-                                <div class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border-2 border-slate-700 transition-all group-hover:border-teal-400/50">
-                                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=400" alt="Demo 2" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <span class="text-xs font-bold text-white px-2 text-center">Project Demo 2</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intro-thumb flex-none w-48 md:w-64 cursor-pointer group" data-src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=800" data-title="Profile Intro">
-                                <div class="relative aspect-video bg-slate-800 rounded-lg overflow-hidden border-2 border-slate-700 transition-all group-hover:border-teal-400/50">
-                                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=400" alt="Profile" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <span class="text-xs font-bold text-white px-2 text-center">Profile Intro</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <section id="experience" class="mb-12 scroll-mt-16 md:mb-16 lg:mb-24 lg:scroll-mt-24"
                     aria-label="Work experience">
@@ -294,17 +241,10 @@
                                     aria-label="2018 to 2024">2018 — 2024</header>
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
-                                        <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-
-                                                aria-label="Lead Engineer at Upstatement (opens in a new tab)">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>Lead Engineer · <span class="inline-block">Upstatement </span></span>
-                                            </div>
+                                        <div class="text-base font-semibold">
+                                            Lead Engineer <span class="text-slate-200">· Upstatement</span>
                                         </div>
-                                        <div class="text-slate-500" aria-hidden="true">Senior Engineer</div>
-                                        <div class="text-slate-500" aria-hidden="true">Engineer</div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Full-time · Boston, MA</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Build, style, and ship high-quality websites, design systems, mobile apps, and
@@ -314,58 +254,6 @@
                                         within engineering department through close collaboration, knowledge shares, and
                                         spearheading the development of internal tools.
                                     </p>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                JavaScript</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                TypeScript</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                HTML & SCSS</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                React</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Next.js</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                React Native</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                WordPress</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Contentful</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Node.js</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                PHP</div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -380,97 +268,16 @@
                                     aria-label="July to December 2017">July — Dec 2017</header>
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
-                                        <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-
-
-                                                aria-label="UI Engineer Co-op at Apple (opens in a new tab)">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>UI Engineer Co-op · <span class="inline-block">Apple </span></span>
-                                            </div>
+                                        <div class="text-base font-semibold">
+                                            UI Engineer Co-op <span class="text-slate-200">· Apple</span>
                                         </div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Cupertino, CA</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Developed and styled interactive web apps for Apple Music, including the user
                                         interface of Apple Music's embeddable web player widget for in-browser user
                                         authorization and full song playback.
                                     </p>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Related links">
-                                        <li class="mr-4">
-                                            <a class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 "
-                                                href="https://developer.apple.com/documentation/musickitjs"
-                                                target="_blank" rel="noreferrer noopener"
-                                                aria-label="MusicKit.js (opens in a new tab)">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                    fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                    <path
-                                                        d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                    </path>
-                                                    <path
-                                                        d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                    </path>
-                                                </svg>
-                                                <span>MusicKit.js</span>
-                                            </a>
-                                        </li>
-                                        <li class="mr-4">
-                                            <a class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 "
-                                                href="https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/"
-                                                target="_blank" rel="noreferrer noopener"
-                                                aria-label="9to5Mac (opens in a new tab)">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                    fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                    <path
-                                                        d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                    </path>
-                                                    <path
-                                                        d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                    </path>
-                                                </svg>
-                                                <span>9to5Mac</span>
-                                            </a>
-                                        </li>
-                                        <li class="mr-4">
-                                            <a class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 "
-                                                href="https://www.theverge.com/2018/6/3/17424122/apple-music-web-player-song-embeds-api-wwdc-2018"
-                                                target="_blank" rel="noreferrer noopener"
-                                                aria-label="The Verge (opens in a new tab)">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                    fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                    <path
-                                                        d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                    </path>
-                                                    <path
-                                                        d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                    </path>
-                                                </svg>
-                                                <span>The Verge</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Ember</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                SCSS</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                JavaScript</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                MusicKit.js</div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -485,44 +292,16 @@
                                     aria-label="2016 to 2017">2016 — 2017</header>
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
-                                        <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-
-
-                                                aria-label="Developer at Scout Studio (opens in a new tab)">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>Developer · <span class="inline-block">Scout Studio </span></span>
-                                            </div>
+                                        <div class="text-base font-semibold">
+                                            Developer <span class="text-slate-200">· Scout Studio</span>
                                         </div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Part-time · Boston, MA</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Collaborated with other student designers and engineers on pro-bono projects to
                                         create new brands, design systems, and websites for organizations in the
                                         community.
                                     </p>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Jekyll</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                SCSS</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                JavaScript</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                WordPress</div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -537,78 +316,15 @@
                                     aria-label="July to December 2016">July — Dec 2016</header>
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
-                                        <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-
-                                                aria-label="Software Engineer Co-op at Starry (opens in a new tab)">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>Software Engineer Co-op · <span class="inline-block">Starry </span></span>
-                                            </div>
+                                        <div class="text-base font-semibold">
+                                            Software Engineer Co-op <span class="text-slate-200">· Starry</span>
                                         </div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Boston, MA</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Worked with the UI team to engineer and improve major features of Starry's
                                         customer-facing Android app.
                                     </p>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Related links">
-                                        <li class="mr-4">
-                                            <a class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 "
-                                                href="https://play.google.com/store/apps/details?id=com.starry.internet&hl=en_US&gl=US"
-                                                target="_blank" rel="noreferrer noopener"
-                                                aria-label="Android App (opens in a new tab)">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                    fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                    <path
-                                                        d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                    </path>
-                                                    <path
-                                                        d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                    </path>
-                                                </svg>
-                                                <span>Android App</span>
-                                            </a>
-                                        </li>
-                                        <li class="mr-4">
-                                            <a class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 "
-                                                href="https://screentimelabs.com/" target="_blank"
-                                                rel="noreferrer noopener"
-                                                aria-label="ScreenTime 2.0 (opens in a new tab)">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                    fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                    <path
-                                                        d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                    </path>
-                                                    <path
-                                                        d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                    </path>
-                                                </svg>
-                                                <span>ScreenTime 2.0</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Cordova</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                Backbone</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                JavaScript</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                CSS</div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -623,44 +339,15 @@
                                     aria-label="July to December 2015">July — Dec 2015</header>
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
-                                        <div>
-                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-
-
-                                                aria-label="Creative Technologist Co-op at MullenLowe U.S. (opens in a new tab)">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>Creative Technologist Co-op · <span
-                                                        class="inline-block">MullenLowe U.S. </span></span>
-                                            </div>
+                                        <div class="text-base font-semibold">
+                                            Creative Technologist Co-op <span class="text-slate-200">· MullenLowe U.S.</span>
                                         </div>
+                                        <div class="text-slate-500 text-sm font-medium mt-2">Internship · Boston, MA</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Developed, maintained, and shipped production code for client websites. Clients
                                         included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more.
                                     </p>
-                                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                HTML</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                CSS</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                JavaScript</div>
-                                        </li>
-                                        <li class="mr-1.5 mt-2">
-                                            <div
-                                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                jQuery</div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -701,18 +388,13 @@
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
                                         <div>
-                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                                href="#" aria-label="Institut Teknologi Bandung (ITB)">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>Institut Teknologi Bandung (ITB) <span class="inline-block"> ·
-                                                        Master of Computer Science</span></span>
-                                            </a>
+                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                                <span>Institut Teknologi Bandung (ITB) <span class="inline-block"> · Master of Computer Science</span></span>
+                                            </div>
+                                            <div class="text-teal-300 text-sm font-medium mt-1">Bandung, Indonesia</div>
                                         </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">Bandung. Thesis: 'Optimizing High-Concurrency
-                                        Database Transactions in Distributed Systems'. Graduated Cum Laude.</p>
-
+                                    <p class="mt-2 text-sm leading-normal">Thesis: 'Optimizing High-Concurrency Database Transactions in Distributed Systems'. Graduated Cum Laude.</p>
                                 </div>
                             </div>
                         </li>
@@ -728,17 +410,13 @@
                                 <div class="z-10 sm:col-span-6">
                                     <h3 class="font-medium leading-snug text-slate-200">
                                         <div>
-                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                                href="#" aria-label="Widyatama University">
-                                                <span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                <span>Widyatama University <span class="inline-block"> · Bachelor's
-                                                        Degree in Informatics</span></span>
-                                            </a>
+                                            <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                                <span>Widyatama University <span class="inline-block"> · Bachelor's Degree in Informatics</span></span>
+                                            </div>
+                                            <div class="text-teal-300 text-sm font-medium mt-1">Bandung, Indonesia</div>
                                         </div>
                                     </h3>
-                                    <p class="mt-2 text-sm leading-normal">Bandung. </p>
-
+                                    <p class="mt-2 text-sm leading-normal"></p>
                                 </div>
                             </div>
                         </li>
@@ -781,14 +459,10 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                            href="https://www.newline.co/courses/build-a-spotify-connected-app"
-                                            target="_blank" rel="noreferrer noopener"
-                                            aria-label="Build a Spotify Connected App (opens in a new tab)">
-                                            <span
-                                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                            <span>Build a Spotify Connected App <span class="inline-block"> </span></span>
-                                        </a>
+                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                            <span>Build a Spotify Connected App</span>
+                                        </div>
+                                        <div class="text-teal-300 text-xs font-semibold mt-1">Lead Instructor & Developer</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Video course that teaches how to build a web app with the Spotify Web API.
@@ -840,13 +514,10 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                            href="https://spotify-profile.herokuapp.com/" target="_blank"
-                                            rel="noreferrer noopener" aria-label="Spotify Profile (opens in a new tab)">
-                                            <span
-                                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                            <span>Spotify Profile <span class="inline-block"> </span></span>
-                                        </a>
+                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                            <span>Spotify Profile</span>
+                                        </div>
+                                        <div class="text-teal-300 text-xs font-semibold mt-1">Fullstack Developer</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Web app for visualizing personalized Spotify data. View your top artists, top
@@ -854,16 +525,6 @@
                                         Create and save new playlists of recommended tracks based on your existing
                                         playlists and more.
                                     </p>
-                                    <div class="mt-2 flex items-center text-sm font-medium text-slate-500"
-                                        aria-label="704 stars on GitHub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                            class="mr-1 h-3 w-3" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>704</span>
-                                    </div>
                                     <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
                                         <li class="mr-1.5 mt-2">
                                             <div
@@ -904,31 +565,14 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                            href="https://marketplace.visualstudio.com/items?itemName=bchiang7.halcyon-vscode"
-                                            target="_blank" rel="noreferrer noopener"
-                                            aria-label="Halcyon Theme (opens in a new tab)">
-                                            <span
-                                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                            <span>Halcyon Theme <span class="inline-block"> </span></span>
-                                        </a>
+                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                            <span>Halcyon Theme</span>
+                                        </div>
+                                        <div class="text-teal-300 text-xs font-semibold mt-1">UI/UX Designer & Theme Developer</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.
                                     </p>
-                                    <div class="mt-2 flex items-center text-sm font-medium text-slate-500"
-                                        aria-label="Over 100k installs">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                            class="mr-1 h-3 w-3" aria-hidden="true">
-                                            <path
-                                                d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
-                                            </path>
-                                            <path
-                                                d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
-                                            </path>
-                                        </svg>
-                                        <span>100k+ Installs</span>
-                                    </div>
                                 </div>
                                 <div class="z-10 sm:order-1 sm:col-span-2">
                                     <div
@@ -947,28 +591,14 @@
                                 </div>
                                 <div class="z-10 sm:order-2 sm:col-span-6">
                                     <h3>
-                                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                            href="https://v4.brittanychiang.com/" target="_blank"
-                                            rel="noreferrer noopener"
-                                            aria-label="brittanychiang.com (v4) (opens in a new tab)">
-                                            <span
-                                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                            <span>brittanychiang.com (v4) <span class="inline-block"> </span></span>
-                                        </a>
+                                        <div class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base font-semibold">
+                                            <span>brittanychiang.com (v4)</span>
+                                        </div>
+                                        <div class="text-teal-300 text-xs font-semibold mt-1">Frontend Developer</div>
                                     </h3>
                                     <p class="mt-2 text-sm leading-normal">
                                         An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks
                                     </p>
-                                    <div class="mt-2 flex items-center text-sm font-medium text-slate-500"
-                                        aria-label="8151 stars on GitHub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                            class="mr-1 h-3 w-3" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>8,151</span>
-                                    </div>
                                     <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
                                         <li class="mr-1.5 mt-2">
                                             <div
@@ -1018,13 +648,8 @@
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-medium leading-snug text-slate-200">
                                 <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Clean Code Architecture">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Clean Code Architecture <span class="inline-block"> · Uncle
-                                                Bob</span></span>
-                                    </a>
+                                    <div class="text-base font-semibold text-slate-200">Clean Code Architecture</div>
+                                    <div class="text-teal-300 text-sm font-medium mt-1">Uncle Bob</div>
                                 </div>
                             </h3>
                             <p class="mt-2 text-sm leading-normal"></p>
@@ -1044,13 +669,8 @@
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-medium leading-snug text-slate-200">
                                 <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Advanced Vue Design Patterns">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Advanced Vue Design Patterns <span class="inline-block"> · Vue
-                                                Mastery</span></span>
-                                    </a>
+                                    <div class="text-base font-semibold text-slate-200">Advanced Vue Design Patterns</div>
+                                    <div class="text-teal-300 text-sm font-medium mt-1">Vue Mastery</div>
                                 </div>
                             </h3>
                             <p class="mt-2 text-sm leading-normal"></p>
@@ -1080,13 +700,8 @@
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-medium leading-snug text-slate-200">
                                 <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="AWS Certified Solutions Architect">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>AWS Certified Solutions Architect <span class="inline-block"> · Amazon Web
-                                                Services</span></span>
-                                    </a>
+                                    <div class="text-base font-semibold text-slate-200">AWS Certified Solutions Architect</div>
+                                    <div class="text-teal-300 text-sm font-medium mt-1">Amazon Web Services</div>
                                 </div>
                             </h3>
                             <p class="mt-2 text-sm leading-normal"></p>
@@ -1106,13 +721,8 @@
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-medium leading-snug text-slate-200">
                                 <div>
-                                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
-                                        href="#" aria-label="Laravel Certified Developer">
-                                        <span
-                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span>Laravel Certified Developer <span class="inline-block"> ·
-                                                Laravel</span></span>
-                                    </a>
+                                    <div class="text-base font-semibold text-slate-200">Laravel Certified Developer</div>
+                                    <div class="text-teal-300 text-sm font-medium mt-1">Laravel</div>
                                 </div>
                             </h3>
                             <p class="mt-2 text-sm leading-normal"></p>
@@ -1341,14 +951,7 @@
                             class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                         </div>
                         <div class="z-10 col-span-2">
-                            <div
-                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2">
-                                <!-- Placeholder Image for Blog -->
-                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=500&auto=format&fit=crop" alt="Blog" class="h-20 w-full object-cover rounded border border-slate-700 shadow-sm" />
-                            </div>
-                        </div>
-                        <div class="z-10 col-span-6">
-                            <p class="-mt-1 text-sm font-semibold leading-6 text-slate-500">2024</p>
+                            <p class="text-sm font-semibold leading-6 text-slate-500">2024</p>
                             <h3 class="-mt-1">
                                 <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
                                     href="#" target="_blank" rel="noreferrer noopener"
@@ -1369,14 +972,7 @@
                             class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                         </div>
                         <div class="z-10 col-span-2">
-                            <div
-                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2">
-                                <!-- Placeholder Image for Blog -->
-                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=500&auto=format&fit=crop" alt="Blog" class="h-20 w-full object-cover rounded border border-slate-700 shadow-sm" />
-                            </div>
-                        </div>
-                        <div class="z-10 col-span-6">
-                            <p class="-mt-1 text-sm font-semibold leading-6 text-slate-500">2020</p>
+                            <p class="text-sm font-semibold leading-6 text-slate-500">2020</p>
                             <h3 class="-mt-1">
                                 <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
                                     href="#" target="_blank" rel="noreferrer noopener"
@@ -1397,14 +993,7 @@
                             class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                         </div>
                         <div class="z-10 col-span-2">
-                            <div
-                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2">
-                                <!-- Placeholder Image for Blog -->
-                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=500&auto=format&fit=crop" alt="Blog" class="h-20 w-full object-cover rounded border border-slate-700 shadow-sm" />
-                            </div>
-                        </div>
-                        <div class="z-10 col-span-6">
-                            <p class="-mt-1 text-sm font-semibold leading-6 text-slate-500">2019</p>
+                            <p class="text-sm font-semibold leading-6 text-slate-500">2019</p>
                             <h3 class="-mt-1">
                                 <a class="inline-flex items-baseline font-medium leading-tight text-slate-200   text-base font-semibold"
                                     href="#" target="_blank" rel="noreferrer noopener"
@@ -1423,20 +1012,7 @@
 
         <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
             <p>
-                Loosely designed in <a href="https://www.figma.com/"
-                    class="font-medium text-slate-400 " target="_blank"
-                    rel="noreferrer noopener">Figma</a> and coded in <a href="https://code.visualstudio.com/"
-                    class="font-medium text-slate-400 " target="_blank"
-                    rel="noreferrer noopener">Visual Studio Code</a> by yours truly. Built with <a
-                    href="https://nextjs.org/"
-                    class="font-medium text-slate-400 " target="_blank"
-                    rel="noreferrer noopener">Next.js</a> and <a href="https://tailwindcss.com/"
-                    class="font-medium text-slate-400 " target="_blank"
-                    rel="noreferrer noopener">Tailwind CSS</a>, deployed with <a href="https://vercel.com/"
-                    class="font-medium text-slate-400 " target="_blank"
-                    rel="noreferrer noopener">Vercel</a>. All text is set in the <a href="https://rsms.me/inter/"
-                    class="font-medium text-slate-400 " target="_blank"
-                    rel="noreferrer noopener">Inter</a> typeface.
+                Brittany Chiang — 2026
             </p>
         </footer>
         </main>
